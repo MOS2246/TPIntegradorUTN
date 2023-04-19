@@ -7,6 +7,8 @@ public class Partido {
 	private int goles1local;
 	private int goles2visitante;
 	
+	public Partido() {
+	}
 	//Constructor
 	public Partido(Equipo equipo1local, Equipo equipo2visitante) {
 		super();

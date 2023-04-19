@@ -30,4 +30,15 @@ public class Ronda {
     public void setPartidos(ArrayList<Partido> partidos) {
         this.partidos = partidos;
     }
+    
+
+    public int totalPuntos(ArrayList<Pronostico> pronosticos, Apostador apostador) {
+        int i = 0;
+        int total = 0;
+        while (i < pronosticos.size()) {
+            total += pronosticos.get(i).puntos(apostador);
+            i++;
+        }
+        return total;
+    }
 }
